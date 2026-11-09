@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合案例2-注册信息</title>
+</head>
+<body>
+    <h1>注册信息</h1>
+    <form action="#" method="get">
+        <h2>基本信息</h2>
+        <p><label>姓名：<input type="text" name="username" placeholder="请输入姓名" required></label></p>
+        <p><label>密码：<input type="password" name="password" required></label></p>
+        <p>性别：
+            <label><input type="radio" name="gender" value="男" checked>男</label>
+            <label><input type="radio" name="gender" value="女">女</label>
+        </p>
+        <p><label>城市：<select name="city"><option>北京</option><option>上海</option><option>广州</option></select></label></p>
+        <h2>兴趣爱好</h2>
+        <p><label><input type="checkbox" name="hobby" value="阅读">阅读</label>
+           <label><input type="checkbox" name="hobby" value="运动">运动</label></p>
+        <p><label>个人介绍：<br><textarea name="intro" rows="4" cols="30"></textarea></label></p>
+        <p><label><input type="checkbox" required>我已阅读页面说明</label></p>
+        <button type="submit">提交信息</button>
+        <button type="reset">重新填写</button>
+    </form>
+</body>
+</html>

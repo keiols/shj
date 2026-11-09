@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抖音解决方案</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            color: #333;
+        }
+
+        .box {
+            width: 1200px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #f5f5f5;
+        }
+
+        .box h2 {
+            margin-bottom: 30px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        /* 外层 Flex：两列排列，换行后均匀分配行间空白 */
+        .box ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            height: 320px;
+        }
+
+        /* 内层 Flex：图片和文字水平排列，垂直居中 */
+        .box li {
+            display: flex;
+            align-items: center;
+            width: 540px;
+            height: 145px;
+            padding: 25px 30px;
+            background-color: #fff;
+        }
+
+        .pic {
+            flex-shrink: 0;
+            width: 80px;
+            height: 80px;
+            margin-right: 24px;
+        }
+
+        .pic img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .text p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>抖音解决方案</h2>
+        <ul>
+            <li>
+                <div class="pic"><img src="images/80-发布.svg" alt="多端发布示意图"></div>
+                <div class="text">
+                    <h3>一键发布多端</h3>
+                    <p>一次创作，多端分发，让优质内容触达更多用户。</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic"><img src="images/80-数据.svg" alt="数据分析示意图"></div>
+                <div class="text">
+                    <h3>数据全面回流</h3>
+                    <p>了解内容表现，分析用户反馈，持续优化运营效果。</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic"><img src="images/80-接入.svg" alt="应用接入示意图"></div>
+                <div class="text">
+                    <h3>低成本快速接入</h3>
+                    <p>通过开放能力连接应用，简化开发和接入流程。</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic"><img src="images/80-组件.svg" alt="功能组件示意图"></div>
+                <div class="text">
+                    <h3>丰富的功能组件</h3>
+                    <p>组合常用功能，满足不同场景下的业务需求。</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

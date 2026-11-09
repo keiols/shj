@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <style>
+       div{
+          width: 200px;
+          height: 200px;
+          background-color: pink;}
+       div::before{
+        /*在元素里面最前面添加一个伪元素*/
+          content: "老鼠";
+
+         width: 100px;
+         height: 100px;
+         background-color: brown;
+         display: block;
+   /*必须设置content属性，否则不生效>*/
+
+       }
+       div::after{
+
+        /*在元素里面最后面添加一个伪元素*/
+          content: "大米";
+       }
+
+    </style>
+</head>
+<body>
+  <!--标签内容：老鼠爱大米 -->
+  <div>爱</div>  
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        a { color: #333; text-decoration: none; }
+        a:hover { color: red; text-decoration: underline; }
+        a:active { color: orange; }
+        input:focus { outline: 2px solid #4388d6; }
+    </style>
+</head>
+<body>
+    <p><a href="#example">鼠标移入链接后变红，按住鼠标时变橙色。</a></p>
+    <label>点击输入框：<input type="text" placeholder="观察边框变化"></label>
+    <p id="example">这里是链接的目标位置。</p>
+</body>
+</html>

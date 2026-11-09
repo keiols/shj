@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        .box p { color: red; }
+        .box > span { color: blue; }
+        h2, h3 { font-weight: 400; }
+        .red.large { color: #c00000; font-size: 26px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>后代选择器可以选到这个段落。</p>
+        <span>这是 box 的直接子元素。</span>
+        <div><span>这是更深一层的 span。</span></div>
+    </div>
+    <h2>并集选择器</h2>
+    <h3>这两个标题使用同一条规则。</h3>
+    <p class="red large">同时具有 red 和 large 两个类。</p>
+</body>
+</html>

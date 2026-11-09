@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景属性-拆分写法</title>
+    <style>
+        div { width: 400px; height: 200px; }
+        .repeat {
+            background-color: #f7e8c7;
+            background-image: url("images/背景.svg");
+            background-repeat: repeat;
+        }
+        .picture {
+            background-color: #d9eef8;
+            background-image: url("images/风景.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h2>背景平铺</h2>
+    <div class="repeat"></div>
+    <h2>背景不平铺、居中和缩放</h2>
+    <div class="picture"></div>
+</body>
+</html>

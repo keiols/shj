@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS三大特性</title>
+    <style>
+        .parent { color: green; }
+        .cascade { color: red; }
+        .cascade { color: blue; }
+        .red { color: red; }
+        #special { color: purple; }
+    </style>
+</head>
+<body>
+    <div class="parent"><p>继承：文字颜色来自父元素。</p></div>
+    <p class="cascade">层叠：同一元素的相同属性，后面的声明覆盖前面的声明。</p>
+    <p class="red" id="special">优先级：id 选择器比类选择器优先。</p>
+</body>
+</html>

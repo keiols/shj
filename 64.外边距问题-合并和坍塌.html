@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距-合并和塌陷 </title>
+    <style>
+        .one{
+          width: 100px;
+          height: 100px;
+          background-color: brown;
+          margin-bottom: 20px;
+
+        }
+
+
+    .two{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }   
+
+    
+    .father {
+        width: 300px;
+        height: 300px;
+        background-color: pink;
+        padding-top: 50px;
+        box-sizing: border-box;
+
+    }
+    /*父子级的标签，子级的添加上外边框会产生塌陷问题
+    导致父级一起向下移动
+
+    取消子级margin，父级设置padding
+    父级设置overflow:hidden
+    父级设置 border-top*/
+    .son {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+    }
+    </style>
+</head>
+<body>
+   
+     <div class="one">one</div>
+     <div class="two">two</div>
+     <div class="father">
+        <div class="son">son</div>
+    </div>
+     
+
+</body>
+</html>
